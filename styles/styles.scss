@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Raleway:wght@300;400;500;700&display=swap");
+
+@import "_resets";
+@import "_frontpage";
+@import "_resets";
+
+:root {
+  --primary-color: #007af3;
+  --red: #eb1c22;
+  --newred: #cd3436;
+  --dark: #3f3531;
+}
+
+h2 {
+  color: #1b3b46;
+  margin: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: #797575;
+}
+
+.glide {
+  margin: 0.5rem;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Raleway;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+
+.logo {
+  max-width: 25vw;
+}
+
+.alert {
+  margin-top: 0;
+  height: 50px;
+  // background: var(--red);
+  background: #ed2b33ff;
+  display: flex;
+  align-items: center;
+
+  p {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.015em;
+  }
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+  position: relative;
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  padding: 5em 2em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  // background: #20272e;
+  background: #2b4162;
+  height: 100vh;
+  padding: 1em;
+
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-size: 1.3em;
+      text-align: right;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-height: 25vh;
+
+  #logo-container {
+    width: 30vw;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    width: 100%;
+    padding-top: 0.5rem;
+
+    li {
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    font-size: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .logo {
+    max-width: 10vw;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-nav {
+      display: block;
+
+      button {
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        background: #ed2b33ff;
+        font-weight: bolder;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          background-color: white;
+          color: #ed2b33ff;
+          border: 1px solid #ed2b33ff;
+        }
+      }
+    }
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: center;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    // padding: 0;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+
+    ul.primary-nav {
+      margin: 0;
+    }
+
+    li.current a {
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+}
