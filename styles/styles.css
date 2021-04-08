@@ -491,7 +491,7 @@ input {
             align-items: center;
   }
   .program {
-    padding: 5rem 0;
+    padding: 7rem 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -536,24 +536,6 @@ input {
     margin: 0 auto;
     height: 25vh;
     width: 30%;
-  }
-  .food {
-    margin-top: 1rem;
-    background: url(../assets/Cheese_1662x1020.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  .music {
-    margin-top: 1rem;
-    background: url(../assets/Gin-Joint_Venue2.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  .session {
-    margin-top: 1rem;
-    background: url(../assets/Gin-Joint_Venue2.jpg);
-    background-position: center;
-    background-size: cover;
   }
   .prog-card-test h2 {
     position: absolute;
