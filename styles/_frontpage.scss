@@ -5,7 +5,7 @@
   // background: url(/assets/relish-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   height: 60vh;
   position: relative;
   display: flex;
@@ -101,15 +101,11 @@
     font-size: 1.5em;
     line-height: 1.5rem;
     text-align: center;
-    letter-spacing: -0.015em;
-  }
-  #location-header {
-    display: inline-block;
-    padding-top: 1rem;
   }
 
   p {
     padding-top: 3rem;
+    text-align: center;
   }
 }
 
@@ -268,6 +264,10 @@
       max-width: 500px;
     }
   }
+  #eventbrite-widget-modal-trigger-142035747745 {
+    padding: 1rem 2rem;
+    width: 150px;
+  }
 
   .info {
     width: 75%;
@@ -277,7 +277,7 @@
     width: 40%;
     display: block;
     img {
-      max-width: 90%;
+      max-width: 100%;
       height: auto;
     }
   }
@@ -291,6 +291,7 @@
   }
 
   .prog-card {
+    width: 20vw;
     button {
       font-size: 1em;
     }
@@ -307,6 +308,11 @@
       }
     }
   }
+
+  .ticket-container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -321,8 +327,16 @@
     }
   }
 
+  .right-half {
+    margin-left: -6rem;
+  }
+
   .program {
     padding: 10rem;
+  }
+
+  .sponsors {
+    padding: 7.5rem 0;
   }
 
   footer {

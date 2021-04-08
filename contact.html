@@ -17,7 +17,7 @@
     <div class="navbar">
       <div class="container">
         <div class="logo">
-          <a href="#"
+          <a href="/"
             ><img class="logo" src="./assets/Relish-Logo.png" alt=""
           /></a>
         </div>
@@ -37,21 +37,57 @@
             alt=""
           />
           <ul class="primary-nav">
-            <li class="current"><a href="/">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="./program.html">Program</a></li>
             <li>
               <a href="https://www.visitfrasercoast.com/" target="_blank"
                 >Plan Your Visit</a
               >
             </li>
-            <li><a href="./contact.html">Contact Us</a></li>
+            <li class="current"><a href="./contact.html">Contact Us</a></li>
           </ul>
         </nav>
         <div class="btn-nav"><a href="#"></a><button>Tickets</button></div>
       </div>
     </div>
     <!-- Hero section -->
-    <h2>Conact page</h2>
+    <section class="hero overlay">
+      <div class="nav-wave">
+        <img src="./assets/nav-btm-wave.svg" alt="" />
+      </div>
+      <div class="title">
+        <h1>Contact Us</h1>
+      </div>
+      <!-- <img src="./assets/hero-btm-wave.svg" alt="" /> -->
+      <img class="bwave" srcset="./assets/nav-btm-wave-big.svg" alt="" />
+    </section>
+
+    <div class="mobile-ticket-container">
+      <div id="mobile-tickets">
+        <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com.au/e/relish-food-wine-festival-tickets-142035747745" rel="noopener noreferrer" target="_blank"></noscript>
+  <!-- You can customize this button any way you like -->
+  <button id="eventbrite-widget-modal-trigger-142035747745" type="button">Buy Tickets</button>
+  <noscript></a>Buy Tickets on Eventbrite</noscript>
+  
+  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+  
+  <script type="text/javascript">
+      var exampleCallback = function() {
+          console.log('Order complete!');
+      };
+  
+      window.EBWidgets.createWidget({
+          widgetType: 'checkout',
+          eventId: '142035747745',
+          modal: true,
+          modalTriggerElementId: 'eventbrite-widget-modal-trigger-142035747745',
+          onOrderComplete: exampleCallback
+      });
+  </script>
+      </div>
+    </div>
+
     <script src="index.js"></script>
 
     <footer>
