@@ -2,7 +2,6 @@
   margin-top: -20px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url(/assets/relish-hero.png);
-  // background: url(/assets/relish-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -146,9 +145,10 @@
   }
 
   .bottom {
-    p {
-      font-size: 0.85rem;
-      padding: 0.5rem;
+    h2 {
+      position: absolute;
+      bottom: 0;
+      right: 3rem;
     }
     button {
       position: absolute;
@@ -162,6 +162,59 @@
       font-weight: bold;
       cursor: pointer;
     }
+  }
+}
+
+.program-card-single {
+  position: relative;
+  margin: 0 auto;
+  height: 25vh;
+  width: 80%;
+}
+
+.food {
+  margin-top: 1rem;
+  background: url(../assets/Cheese_1662x1020.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.music {
+  margin-top: 1rem;
+  background: url(../assets/Gin-Joint_Venue2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.session {
+  margin-top: 1rem;
+  background: url(../assets/Gin-Joint_Venue2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.prog-card-test {
+  h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-family: raleway;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: none;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-family: raleway;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
   }
 }
 
@@ -249,6 +302,59 @@
     }
   }
 
+  .program-card-single {
+    position: relative;
+    margin: 0 auto;
+    height: 25vh;
+    width: 30%;
+  }
+
+  .food {
+    margin-top: 1rem;
+    background: url(../assets/Cheese_1662x1020.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .music {
+    margin-top: 1rem;
+    background: url(../assets/Gin-Joint_Venue2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .session {
+    margin-top: 1rem;
+    background: url(../assets/Gin-Joint_Venue2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .prog-card-test {
+    h2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: white;
+      padding: 1rem 1.5rem;
+      font-family: raleway;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    button {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border: none;
+      background-color: white;
+      padding: 1rem 1.5rem;
+      font-family: raleway;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
   footer {
     #logo-container {
       max-width: 15vw;
@@ -267,6 +373,29 @@
   #eventbrite-widget-modal-trigger-142035747745 {
     padding: 1rem 2rem;
     width: 150px;
+  }
+
+  .program-card-single {
+    height: 40vh;
+    width: 30%;
+  }
+
+  .prog-card-test {
+    h2 {
+      padding: 1.5rem 2rem;
+    }
+    button {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border: none;
+      background-color: white;
+      padding: 1rem 1.5rem;
+      font-family: raleway;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
   }
 
   .info {

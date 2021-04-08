@@ -89,14 +89,14 @@ video {
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 article,
@@ -168,22 +168,14 @@ input {
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .hero {
   margin-top: -20px;
-  background: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 0.15)),
-      to(rgba(0, 0, 0, 0.15))
-    ),
-    url(/assets/relish-hero.png);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url(/assets/relish-hero.png);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.15))), url(/assets/relish-hero.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/assets/relish-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -193,11 +185,11 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .nav-wave img {
@@ -220,14 +212,14 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .title h1 {
@@ -249,14 +241,14 @@ input {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-ticket-container #eventbrite-widget-modal-trigger-142035747745 {
@@ -265,7 +257,7 @@ input {
   border: none;
   border-radius: 30px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background: #ed2b33ff;
 }
 
@@ -317,10 +309,10 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
 }
 
 .program h2 {
@@ -335,11 +327,11 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: white;
   margin: 0 auto;
   max-width: 80%;
@@ -358,12 +350,65 @@ input {
   width: 100%;
 }
 
-.prog-card .bottom p {
-  font-size: 0.85rem;
-  padding: 0.5rem;
+.prog-card .bottom h2 {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
 }
 
 .prog-card .bottom button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  font-family: raleway;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.program-card-single {
+  position: relative;
+  margin: 0 auto;
+  height: 25vh;
+  width: 80%;
+}
+
+.food {
+  margin-top: 1rem;
+  background: url(../assets/Cheese_1662x1020.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.music {
+  margin-top: 1rem;
+  background: url(../assets/Gin-Joint_Venue2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.session {
+  margin-top: 1rem;
+  background: url(../assets/Gin-Joint_Venue2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.prog-card-test h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  font-family: raleway;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.prog-card-test button {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -393,12 +438,12 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sponsors h2 {
@@ -410,11 +455,11 @@ input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0.5rem;
 }
 
@@ -436,30 +481,30 @@ input {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .program {
     padding: 5rem 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-line-pack: center;
-    align-content: center;
+        align-content: center;
     -ms-flex-preferred-size: 700px;
-    flex-basis: 700px;
+        flex-basis: 700px;
   }
   .program .prog-card {
     max-width: 30%;
@@ -474,8 +519,8 @@ input {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .sponsors .sponsor-single {
     max-width: 300px;
@@ -485,6 +530,52 @@ input {
   .sponsors img {
     width: 100%;
     height: auto;
+  }
+  .program-card-single {
+    position: relative;
+    margin: 0 auto;
+    height: 25vh;
+    width: 30%;
+  }
+  .food {
+    margin-top: 1rem;
+    background: url(../assets/Cheese_1662x1020.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .music {
+    margin-top: 1rem;
+    background: url(../assets/Gin-Joint_Venue2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .session {
+    margin-top: 1rem;
+    background: url(../assets/Gin-Joint_Venue2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .prog-card-test h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-family: raleway;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .prog-card-test button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: none;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-family: raleway;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
   }
   footer #logo-container {
     max-width: 15vw;
@@ -501,6 +592,25 @@ input {
   #eventbrite-widget-modal-trigger-142035747745 {
     padding: 1rem 2rem;
     width: 150px;
+  }
+  .program-card-single {
+    height: 40vh;
+    width: 30%;
+  }
+  .prog-card-test h2 {
+    padding: 1.5rem 2rem;
+  }
+  .prog-card-test button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: none;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-family: raleway;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
   }
   .info {
     width: 75%;
@@ -674,14 +784,14 @@ video {
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 article,
@@ -753,8 +863,8 @@ input {
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 :root {
@@ -814,8 +924,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .alert p {
@@ -879,7 +989,7 @@ nav {
   width: 66%;
   right: 0;
   top: 0;
-  background: #2b4162;
+  background: #3f3531;
   height: 100vh;
   padding: 1em;
 }
@@ -913,14 +1023,14 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
   max-height: 25vh;
 }
@@ -940,11 +1050,11 @@ footer #footer-nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-size: 0.8rem;
   width: 100%;
   padding-top: 0.5rem;
@@ -973,11 +1083,11 @@ footer p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar .container .btn-nav {
     display: block;
@@ -987,7 +1097,7 @@ footer p {
     padding: 0.75rem 2rem;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     background: #ed2b33ff;
     font-weight: bolder;
     cursor: pointer;
@@ -1003,8 +1113,8 @@ footer p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: none;
     position: unset;
     height: auto;
@@ -1033,9 +1143,5 @@ footer p {
     width: 1080px;
     margin: 0 auto;
   }
-}
-
-.embed {
-  margin: 2rem 0;
 }
 /*# sourceMappingURL=styles.css.map */
