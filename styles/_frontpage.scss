@@ -170,6 +170,11 @@
   margin: 0 auto;
   height: 25vh;
   width: 80%;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .food {
