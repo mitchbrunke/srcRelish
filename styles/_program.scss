@@ -1,0 +1,26 @@
+.inner-hero {
+  background: url(../assets//winery.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 25vh;
+
+  h2 {
+    color: white;
+  }
+}
+
+.program-page {
+  overflow: hidden;
+  margin: 1rem;
+
+  single-program {
+    max-width: 300px;
+
+    prog-img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

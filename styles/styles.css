@@ -855,6 +855,31 @@ input {
           appearance: none;
 }
 
+.inner-hero {
+  background: url(../assets//winery.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 25vh;
+}
+
+.inner-hero h2 {
+  color: white;
+}
+
+.program-page {
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.program-page single-program {
+  max-width: 300px;
+}
+
+.program-page single-program prog-img img {
+  width: 100%;
+  height: auto;
+}
+
 :root {
   --primary-color: #007af3;
   --red: #eb1c22;
