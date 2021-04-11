@@ -40,6 +40,7 @@ p {
     width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -53,24 +54,25 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .single-program {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
+  .program-page {
+    .single-program {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
 
-    .prog-img {
-      img {
-        width: 85%;
+      .prog-img {
+        img {
+          width: 85%;
+        }
       }
-    }
-    .prog-content {
-      width: 100%;
-      // margin-left: -3rem;
+      .prog-content {
+        width: 100%;
+        // margin-left: -3rem;
+      }
     }
   }
 }
-
 @media only screen and (min-width: 1000px) {
   .single-program {
     max-width: 1000px;
