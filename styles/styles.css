@@ -855,14 +855,41 @@ input {
           appearance: none;
 }
 
+h4 {
+  color: #1b3b46;
+  margin: auto;
+  padding: 0.5rem 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+p {
+  max-width: 100%;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .inner-hero {
   background: url(../assets//winery.jpg);
   background-position: center;
   background-size: cover;
   min-height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .inner-hero h2 {
+  width: 200px;
   color: white;
 }
 
@@ -871,13 +898,51 @@ input {
   margin: 1rem;
 }
 
-.program-page single-program {
-  max-width: 300px;
+.program-page .single-program {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.program-page single-program prog-img img {
-  width: 100%;
+.program-page .single-program .prog-img img {
+  max-width: 100%;
   height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .single-program {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2rem;
+  }
+  .single-program .prog-img img {
+    width: 85%;
+  }
+  .single-program .prog-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .single-program {
+    max-width: 1000px;
+  }
 }
 
 :root {

@@ -1,10 +1,33 @@
+h4 {
+  color: #1b3b46;
+  margin: auto;
+  padding: 0.5rem 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+p {
+  max-width: 100%;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .inner-hero {
   background: url(../assets//winery.jpg);
   background-position: center;
   background-size: cover;
   min-height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   h2 {
+    width: 200px;
+
     color: white;
   }
 }
@@ -13,14 +36,43 @@
   overflow: hidden;
   margin: 1rem;
 
-  single-program {
-    max-width: 300px;
+  .single-program {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    prog-img {
+    .prog-img {
       img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single-program {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+
+    .prog-img {
+      img {
+        width: 85%;
+      }
+    }
+    .prog-content {
+      width: 100%;
+      // margin-left: -3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .single-program {
+    max-width: 1000px;
   }
 }
