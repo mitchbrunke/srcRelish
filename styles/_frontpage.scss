@@ -293,10 +293,14 @@
     #sponsor-container {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      border: 1px solid red;
     }
 
     .sponsor-single {
       max-width: 300px;
+      height: 10vh;
+      border: 1px solid blue;
       margin: 0;
       padding: 0;
     }
@@ -304,6 +308,8 @@
     img {
       width: 100%;
       height: auto;
+      margin: 0;
+      padding: 0;
     }
   }
 

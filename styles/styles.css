@@ -527,15 +527,22 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 1px solid red;
   }
   .sponsors .sponsor-single {
     max-width: 300px;
+    height: 10vh;
+    border: 1px solid blue;
     margin: 0;
     padding: 0;
   }
   .sponsors img {
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
   }
   .program-card-single {
     position: relative;
