@@ -529,12 +529,10 @@ input {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    border: 1px solid red;
   }
   .sponsors .sponsor-single {
     max-width: 300px;
     height: 10vh;
-    border: 1px solid blue;
     margin: 0;
     padding: 0;
   }
