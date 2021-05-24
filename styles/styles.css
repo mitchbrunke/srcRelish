@@ -955,6 +955,222 @@ p {
   }
 }
 
+.getting-here {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2rem;
+}
+
+.getting-here .gh-single {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+}
+
+.getting-here .gh-single p {
+  font-size: 15px;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.getting-here .gh-single img {
+  width: 60px;
+  height: auto;
+}
+
+.vfc-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  margin: auto;
+  background: url(../assets/cta-vfc.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vfc-cta h2 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.vfc-cta button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+.vfc-cta button:hover {
+  padding: 1rem 2.5rem;
+}
+
+.faq {
+  margin-top: 2rem;
+}
+
+.accordion {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+.accordion .a-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.accordion .a-container .a-btn {
+  margin: 0;
+  position: relative;
+  padding: 15px 30px;
+  width: 100%;
+  color: black;
+  font-weight: 400;
+  display: block;
+  font-weight: 500;
+  background-color: #f0efef;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.accordion .a-container .a-btn span {
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  right: 20px;
+  top: 18px;
+}
+
+.accordion .a-container .a-btn span:after {
+  content: "";
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  top: 6px;
+}
+
+.accordion .a-container .a-btn span:before {
+  content: "";
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  top: 6px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion .a-container .a-panel {
+  width: 100%;
+  color: #262626;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+
+.accordion .a-container.active .a-btn {
+  color: black;
+}
+
+.accordion .a-container.active .a-btn span::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.accordion .a-container.active .a-panel {
+  padding: 15px 10px 10px 10px;
+  opacity: 1;
+  max-height: 500px;
+}
+
+@media only screen and (min-width: 768px) {
+  .getting-here {
+    margin: auto;
+    max-width: 95vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 50vh;
+  }
+  .gh-single {
+    width: 30%;
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .getting-here {
+    max-width: 55vw;
+  }
+  .gh-single {
+    width: 30%;
+    padding: 1rem 1rem;
+  }
+  .vfc-cta {
+    width: 65vw;
+  }
+  .faq {
+    padding-top: 2rem;
+  }
+}
+
 :root {
   --primary-color: #007af3;
   --red: #eb1c22;

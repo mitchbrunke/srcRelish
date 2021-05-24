@@ -1,0 +1,177 @@
+.getting-here {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+
+  .gh-single {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+
+    p {
+      font-size: 15px;
+      margin: 0;
+      padding-top: 0.5rem;
+    }
+
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
+}
+
+.vfc-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: auto;
+  background: url(../assets/cta-vfc.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h2 {
+    color: white;
+    padding-bottom: 1rem;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    margin-left: 25%;
+
+    &:hover {
+      padding: 1rem 2.5rem;
+    }
+  }
+}
+
+.faq {
+  margin-top: 2rem;
+}
+
+.accordion {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  .a-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5px;
+    .a-btn {
+      margin: 0;
+      position: relative;
+      padding: 15px 30px;
+      width: 100%;
+      color: black;
+      font-weight: 400;
+      display: block;
+      font-weight: 500;
+      background-color: #f0efef;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      border-radius: 5px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15),
+        0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
+      span {
+        display: block;
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        right: 20px;
+        top: 18px;
+        &:after {
+          content: "";
+          width: 14px;
+          height: 3px;
+          border-radius: 2px;
+          background-color: black;
+          position: absolute;
+          top: 6px;
+        }
+        &:before {
+          content: "";
+          width: 14px;
+          height: 3px;
+          border-radius: 2px;
+          background-color: black;
+          position: absolute;
+          top: 6px;
+          transform: rotate(90deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .a-panel {
+      width: 100%;
+      color: #262626;
+      transition: all 0.2s ease-in-out;
+      opacity: 0;
+      height: auto;
+      max-height: 0;
+      overflow: hidden;
+      padding: 0px 10px;
+    }
+
+    &.active {
+      .a-btn {
+        color: black;
+        span {
+          &::before {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      .a-panel {
+        padding: 15px 10px 10px 10px;
+        opacity: 1;
+        max-height: 500px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .getting-here {
+    margin: auto;
+    max-width: 95vw;
+    flex-direction: row;
+    height: 50vh;
+  }
+
+  .gh-single {
+    width: 30%;
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .getting-here {
+    max-width: 55vw;
+  }
+
+  .gh-single {
+    width: 30%;
+    padding: 1rem 1rem;
+  }
+
+  .vfc-cta {
+    width: 65vw;
+  }
+
+  .faq {
+    padding-top: 2rem;
+  }
+}
